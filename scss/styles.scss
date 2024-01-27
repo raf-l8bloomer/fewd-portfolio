@@ -1,0 +1,68 @@
+// Partial Imports
+
+@import 'partials/variables',
+        'base/base',
+        'layout/header',
+        'layout/footer';
+        
+
+.project-container {
+    border: 1px solid $color-primary;
+    border-radius: 20px;
+    margin: 0 10px 20px 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    max-height: 70%;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    background: $white;
+
+
+}
+
+.project-card {
+    border: 1px solid $color-primary;
+    border-radius: 20px;
+    margin: 0 2em;
+    // min-height: 30em;
+    min-width: 10em;
+    max-width: 50em;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: 29em;
+
+}
+
+.img-container {
+    height: 15em;
+    max-height: 15em;
+    background-color: $white;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+
+}
+
+.description-container {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    padding: 0 1em;
+    background-color: $color-bg;
+    border-top: 1px solid $color-primary;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    overflow: hidden
+}
+
+.description-container:hover {
+    background-color: $color-bg-dark;
+    transition: background-color .5s ease;
+}
+
+
+
+
