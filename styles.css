@@ -1,0 +1,145 @@
+* {
+    font-family: 'Helvetica', 'Arial', sans-serif;
+    text-transform: uppercase;
+    box-sizing: border-box;
+}
+
+h1 {
+    font-size: 2.5rem;
+    font-weight: 900;
+    line-height: 3rem;
+}
+
+h2 {
+    font-size: 2rem;
+    font-weight: 900;
+    line-height: 2rem;
+}
+
+h3 {
+    font-size: 0.8rem;
+    font-weight: 400;
+    line-height: 1rem;
+}
+
+h4 {
+    margin-bottom: 0;
+}
+
+p {
+    font-size: 1rem;
+}
+
+ul {
+    list-style-type: none;
+
+}
+
+li {
+    text-align: left;
+}
+
+body {
+    height: 100vh;
+}
+
+/* HEADER */
+
+.header {
+    display: flex;
+    /* flex-direction: row; */
+    flex-flow: row wrap;
+    align-items: center;
+
+}
+
+#name {
+    width: 70%;
+}
+
+#info {
+    width: 30%;
+    font-size: 0.6rem;
+    text-align: right;
+}
+
+#title {
+    text-align: right;
+    margin-left: auto;
+    padding-top: 0;
+    margin-top: 0;
+}
+
+.project-container {
+    border: 1px solid black;
+    border-radius: 20px;
+    margin: 0 10px 20px 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    max-height: 70%;
+    overflow-x: hidden;
+    overflow-y: scroll;
+
+
+}
+
+.project-card {
+    border: 1px solid blue;
+    border-radius: 20px;
+    margin: 0 2em;
+    min-height: 30em;
+    min-width: 10em;
+    max-width: 50em;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: 29em;
+
+}
+
+.img-container {
+    height: 15em;
+    max-height: 15em;
+}
+
+.description-container {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    padding: 0 1em;
+    background-color: grey;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    overflow: hidden
+}
+
+
+
+
+/* FOOTER */
+
+.footer {
+    margin-top: auto;
+}
+
+.footer-2 {
+    display: flex;
+    flex-direction: row;
+    /* margin-top: auto; */
+    gap: 20px;
+    align-items: center;
+}
+
+#time {
+    text-align: left;
+    margin-right: auto;
+}
+
+#email {
+    text-align: right;
+    margin-left: auto;
+    /* font-size: 0.rem; */
+}
