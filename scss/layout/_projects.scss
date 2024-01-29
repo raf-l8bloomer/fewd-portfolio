@@ -7,12 +7,11 @@
     justify-content: center;
     align-items: center;
     gap: 1rem;
-    max-height: 70%;
+    max-height: 680px;
     overflow-x: hidden;
     overflow-y: scroll;
     background: $white;
-    padding-bottom: 1rem;
-
+    // position: relative;
 
     @media #{$brk-desktop} {
         flex-direction: row;
@@ -31,7 +30,7 @@
     display: flex;
     flex-direction: column;
     position: relative;
-    top: 10%;
+    top: 48em;
 
     @media (min-width: 768px) {
         width: 40em;
@@ -66,7 +65,7 @@
     height: 100%;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
-    object-fit:contain;
+    object-fit: contain;
 
     @media #{$brk-desktop} {
         object-fit: cover;
@@ -85,8 +84,7 @@
     border-bottom-right-radius: 20px;
     overflow: hidden;
 
-    @media #{$brk-desktop} {
-    }
+    @media #{$brk-desktop} {}
 }
 
 .description-container:hover {

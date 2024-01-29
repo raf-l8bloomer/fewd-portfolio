@@ -171,11 +171,10 @@ footer a img:hover {
   justify-content: center;
   align-items: center;
   gap: 1rem;
-  max-height: 70%;
+  max-height: 680px;
   overflow-x: hidden;
   overflow-y: scroll;
   background: #FFFFFF;
-  padding-bottom: 1rem;
 }
 @media (min-width: 1024px) {
   .project-container {
@@ -194,7 +193,7 @@ footer a img:hover {
   display: flex;
   flex-direction: column;
   position: relative;
-  top: 10%;
+  top: 48em;
 }
 @media (min-width: 768px) {
   .project-card {
