@@ -5,27 +5,26 @@
     align-items: center;
 
     @media #{$brk-desktop} {
-        // flex-wrap: nowrap;
         align-items: flex-start;
-        margin-top: 2em;
+        // margin-top: 2em;
 
     }
 
 }
 
 #name {
-    width: 70%;
+    margin-right: auto;
 
-    @media #{$brk-desktop} {
-        margin-top: 0;
-        width: 20%;
+    @media #{$brk-tablet} {
+
+        margin-right: 0.5em;
     }
 
 }
 
 #info {
     width: 30%;
-    font-size: 0.6rem;
+    font-size: 0.7rem;
     text-align: right;
 
     @media #{$brk-tablet} {
@@ -34,13 +33,15 @@
     }
 
     @media #{$brk-desktop} {
+        flex-grow: 1;
         font-size: 1.3rem;
         line-height: 1.2rem;
         text-align: left;
         margin-right: auto;
+        margin-top: 2em;
     }
 
-    
+
 }
 
 #title {
@@ -49,6 +50,5 @@
     padding-top: 0;
     margin-top: 0;
 
-    @media #{$brk-desktop} {
-    }
+    @media #{$brk-desktop} {}
 }

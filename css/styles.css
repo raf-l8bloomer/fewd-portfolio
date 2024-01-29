@@ -10,6 +10,7 @@ body {
   text-transform: uppercase;
   color: #E43E22;
   background-color: #E5EBE4;
+  margin: 0 20px;
 }
 
 h1 {
@@ -34,7 +35,7 @@ h2 {
   font-weight: 900;
   line-height: 2rem;
 }
-@media (min-width: 768px) {
+@media (min-width: 733px) {
   h2 {
     font-size: 5rem;
     line-height: 4rem;
@@ -50,7 +51,7 @@ h2 {
 }
 
 h3 {
-  font-size: 0.8rem;
+  font-size: 1rem;
   font-weight: 400;
   line-height: 1rem;
 }
@@ -65,7 +66,6 @@ h4 a {
 
 h4 a:visited {
   color: #5b5bf0;
-  -webkit-text-stroke-color: #E43E22;
 }
 
 p {
@@ -96,23 +96,21 @@ footer a img:hover {
 @media (min-width: 1024px) {
   .header {
     align-items: flex-start;
-    margin-top: 2em;
   }
 }
 
 #name {
-  width: 70%;
+  margin-right: auto;
 }
-@media (min-width: 1024px) {
+@media (min-width: 768px) {
   #name {
-    margin-top: 0;
-    width: 20%;
+    margin-right: 0.5em;
   }
 }
 
 #info {
   width: 30%;
-  font-size: 0.6rem;
+  font-size: 0.7rem;
   text-align: right;
 }
 @media (min-width: 768px) {
@@ -123,10 +121,12 @@ footer a img:hover {
 }
 @media (min-width: 1024px) {
   #info {
+    flex-grow: 1;
     font-size: 1.3rem;
     line-height: 1.2rem;
     text-align: left;
     margin-right: auto;
+    margin-top: 2em;
   }
 }
 
@@ -140,26 +140,95 @@ footer a img:hover {
 .footer {
   display: flex;
   flex-direction: row;
-  margin-top: auto;
   gap: 20px;
   align-items: center;
-  padding-bottom: 0;
+  background: #E5EBE4;
+  width: auto;
 }
 
 .social-links {
   display: flex;
   flex-direction: row;
   gap: 5px;
+  margin-left: auto;
 }
 
 .social {
   width: 30px;
   height: 30px;
+  max-width: 100%; /* Add this line */
+  max-height: 100%; /* Add this line */
 }
 
 #time {
   text-align: left;
   margin-right: auto;
+}
+
+/* Toggle reference: https://www.w3schools.com/howto/howto_css_switch.asp */
+/* The switch - the box around the slider */
+.switch {
+  position: relative;
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 60px;
+  height: 34px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #E43E22;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: #FFFFFF;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+input:checked + .slider {
+  background-color: #CFE0CD;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #CFE0CD;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
 }
 
 .project-container {
@@ -168,7 +237,7 @@ footer a img:hover {
   margin: 0 10px 20px 10px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: start;
   align-items: center;
   gap: 1rem;
   max-height: 680px;
@@ -193,7 +262,6 @@ footer a img:hover {
   display: flex;
   flex-direction: column;
   position: relative;
-  top: 48em;
 }
 @media (min-width: 768px) {
   .project-card {
@@ -202,9 +270,7 @@ footer a img:hover {
 }
 @media (min-width: 1024px) {
   .project-card {
-    top: auto;
-    left: 8%;
-    margin-top: 10px;
+    margin: 10px;
     min-width: 30em;
     min-height: 36em;
   }
