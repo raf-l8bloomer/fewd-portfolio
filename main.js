@@ -16,12 +16,11 @@ const footer = document.querySelector('.footer');
 const h1 = document.getElementsByTagName('h1');
 const h2 = document.getElementsByTagName('h2');
 const h3 = document.getElementsByTagName('h3')
-const h4 = document.getElementsByTagName('h4')
 const icons = document.getElementsByClassName('social');
 const iconsArray = [...icons];
 let headings = [];
-headings = [...headings, ...h1, ...h2, ...h3, ...h4];
-console.log(headings)
+headings = [...headings, ...h1, ...h2, ...h3];
+
 
 
 
