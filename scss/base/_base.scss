@@ -8,7 +8,7 @@
 body {
     font-family: $font-stack-primary;
     text-transform: uppercase;
-    height: 100vh;
+    // height: 100vh;
     color: $color-primary;
     background-color: $color-bg;
 }
@@ -17,22 +17,62 @@ h1 {
     font-size: 2.5rem;
     font-weight: 900;
     line-height: 3rem;
+
+
+    // @media #{$brk-tablet} {
+    //     top: 50em;
+    //     min-width: 50em;
+    // }
+
+    @media #{$brk-tablet} {
+        font-size: 4rem;
+    }
+
+    @media #{$brk-desktop} {
+        font-size: 4rem;
+        margin-bottom: 0;
+    }
+
 }
 
 h2 {
     font-size: 2rem;
     font-weight: 900;
     line-height: 2rem;
+
+    @media #{$brk-tablet} {
+        font-size: 5rem;
+        line-height: 4rem;
+    }
+
+    @media #{$brk-desktop} {
+        font-size: 8rem;
+        line-height: 6rem;
+        margin-top: 0;
+        margin-bottom: 2rem;
+    }
 }
 
 h3 {
     font-size: 0.8rem;
     font-weight: 400;
     line-height: 1rem;
+
+
 }
 
 h4 {
     margin-bottom: 0;
+}
+
+h4 a {
+    color: $color-primary;
+}
+
+h4 a:visited {
+    color:  $link-color;
+    -webkit-text-stroke-color: $color-primary;
+
 }
 
 p {
@@ -42,4 +82,16 @@ p {
 ul {
     list-style-type: none;
     padding: 0;
+}
+
+a:hover {
+    // color: $white;
+    // transform: scale(1.1);
+    color:  $link-color;
+    animation: color 0.2s ease;
+}
+
+footer a img:hover {
+    box-shadow: 0 0 50px $color-primary;
+    animation: box-shadow 0.2s ease;
 }

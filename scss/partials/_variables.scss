@@ -7,4 +7,11 @@ $color-bg-dark: #CFE0CD;
 $color-primary:  #E43E22;
 $white: #FFFFFF;
 
-$font-stack-primary: 'Helvetica', 'Arial', sans-serif
+$link-color: #5b5bf0;
+
+$font-stack-primary: 'Helvetica', 'Arial', sans-serif;
+
+/* MEDIA QUERIES ---------*/
+
+$brk-tablet: '(min-width: 768px)';
+$brk-desktop: '(min-width: 1024px)';
